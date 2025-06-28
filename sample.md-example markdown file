@@ -1,0 +1,83 @@
+# Markdown to HTML Converter Demo
+
+This is a **demonstration** of the Markdown to HTML converter tool. It showcases various *Markdown features* that are supported.
+
+## Headers
+
+### This is an H3 header
+#### This is an H4 header
+##### This is an H5 header
+###### This is an H6 header
+
+## Text Formatting
+
+**Bold text** and __also bold__ text examples.
+
+*Italic text* and _also italic_ text examples.
+
+You can also combine ***bold and italic*** formatting.
+
+## Lists
+
+### Unordered List
+- First item
+- Second item
+- Third item
+  - Nested item (manual indentation)
+  - Another nested item
+
+### Ordered List
+1. First numbered item
+2. Second numbered item
+3. Third numbered item
+
+## Links and Code
+
+Here's a link to [Google](https://www.google.com) and an auto-link: https://github.com
+
+Inline code example: `console.log("Hello, World!");`
+
+### Code Block
+
+```javascript
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+const message = greet("World");
+console.log(message);
+```
+
+```python
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+
+print(fibonacci(10))
+```
+
+## Blockquotes
+
+> This is a blockquote. It can contain multiple lines
+> and will be formatted appropriately in the HTML output.
+
+> Another blockquote example.
+
+## Horizontal Rules
+
+Here's a horizontal rule:
+
+---
+
+And another one:
+
+***
+
+## Special Characters
+
+The converter handles special HTML characters like <, >, & properly in regular text.
+
+## Conclusion
+
+This demonstrates the core Markdown features supported by the converter tool. The generated HTML will be clean, well-formatted, and include proper CSS styling for a professional appearance.
