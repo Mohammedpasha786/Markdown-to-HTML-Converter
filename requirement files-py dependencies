@@ -1,0 +1,12 @@
+# Markdown to HTML Converter
+# No external dependencies required - uses only Python standard library
+
+# Python 3.6+ required for:
+# - f-string formatting
+# - pathlib module
+# - typing annotations
+
+# For development/testing (optional):
+# pytest>=6.0.0
+# black>=21.0.0
+# flake8>=3.8.0
