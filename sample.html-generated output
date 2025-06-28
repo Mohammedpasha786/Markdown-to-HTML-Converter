@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            margin-top: 24px;
+            margin-bottom: 16px;
+            font-weight: 600;
+            line-height: 1.25;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        h5 { font-size: 0.875em; }
+        h6 { font-size: 0.85em; color: #6a737d; }
+        p { margin-bottom: 16px; }
+        ul, ol { margin-bottom: 16px; padding-left: 30px; }
+        li { margin-bottom: 4px; }
+        blockquote {
+            margin: 0 0 16px 0;
+            padding: 0 16px;
+            border-left: 4px solid #dfe2e5;
+            color: #6a737d;
+        }
+        code {
+            padding: 2px 4px;
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 85%;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 6px;
+            padding: 16px;
+            overflow: auto;
+            margin-bottom: 16px;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #e1e4e8;
+            margin: 24px 0;
+        }
+    </style>
+</head>
+<body>
+<h1>Markdown to HTML Converter Demo</h1>
+<p>This is a <strong>demonstration</strong> of the Markdown to HTML converter tool. It showcases various <em>Markdown features</em> that are supported.</p>
+<h2>Headers</h2>
+<h3>This is an H3 header</h3>
+<h4>This is an H4 header</h4>
+<h5>This is an H5 header</h5>
+<h6>This is an H6 header</h6>
+<h2>Text Formatting</h2>
+<p><strong>Bold text</strong> and <strong>also bold</strong> text examples.</p>
+<p><em>Italic text</em> and <em>also italic</em> text examples.</p>
+<p>You can also combine <strong><em>bold and italic</em></strong> formatting.</p>
+<h2>Lists</h2>
+<h3>Unordered List</h3>
+<ul>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+<li>Nested item (manual indentation)</li>
+<li>Another nested item</li>
+</ul>
+<h3>Ordered List</h3>
+<ol>
+<li>First numbered item</li>
+<li>Second numbered item</li>
+<li>Third numbered item</li>
+</ol>
+<h2>Links and Code</h2>
+<p>Here's a link to <a href="https://www.google.com">Google</a> and an auto-link: <a href="https://github.com">https://github.com</a></p>
+<p>Inline code example: <code>console.log("Hello, World!");</code></p>
+<h3>Code Block</h3>
+<pre><code>function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+const message = greet("World");
+console.log(message);</code></pre>
+<pre><code>def fibonacci(n):
+    if n &lt;= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+
+print(fibonacci(10))</code></pre>
+<h2>Blockquotes</h2>
+<blockquote>
+<p>This is a blockquote. It can contain multiple lines</p>
+<p>and will be formatted appropriately in the HTML output.</p>
+</blockquote>
+<blockquote>
+<p>Another blockquote example.</p>
+</blockquote>
+<h2>Horizontal Rules</h2>
+<p>Here's a horizontal rule:</p>
+<hr>
+<p>And another one:</p>
+<hr>
+<h2>Special Characters</h2>
+<p>The converter handles special HTML characters like &lt;, &gt;, &amp; properly in regular text.</p>
+<h2>Conclusion</h2>
+<p>This demonstrates the core Markdown features supported by the converter tool. The generated HTML will be clean, well-formatted, and include proper CSS styling for a professional appearance.</p>
+</body>
+</html>
