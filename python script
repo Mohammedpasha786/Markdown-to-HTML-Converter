@@ -1,0 +1,30 @@
+import sys
+import os
+import markdown
+
+def convert_md_to_html(input_path, output_path):
+    # Check if input file exists
+    if not os.path.exists(input_path):
+        print(f"Error: The file {input_path} does not exist.")
+        return
+
+    # Read markdown content
+    with open(input_path, 'r', encoding='utf-8') as f:
+        md_content = f.read()
+
+    # Convert to HTML
+    html_content = markdown.markdown(md_content, extensions=['extra', 'codehilite', 'toc'])
+
+    # Write HTML to output file
+    with open(output_path, 'w', encoding='utf-8') as f:
+        f.write(f"<!DOCTYPE html>\n<html>\n<head>\n<meta charset='UTF-8'>\n<title>Converted Markdown</title>\n</head>\n<body>\n{html_content}\n</body>\n</html>")
+    
+    print(f"Successfully converted {input_path} to {output_path}")
+
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("Usage: python md2html.py input.md output.html")
+    else:
+        input_md = sys.argv[1]
+        output_html = sys.argv[2]
+        convert_md_to_html(input_md, output_html)
